@@ -48,11 +48,16 @@
             border-bottom: 1px solid rgba(212,175,55,0.2);
         }
 
+        /* Make logo round */
         .logo-img {
-            height: 60px;
-            width: auto;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            object-fit: cover;
             margin-bottom: 0.5rem;
-            object-fit: contain;
+            border: 2px solid #D4AF37;
+            padding: 4px;
+            background: #1A1A1A;
         }
 
         .card-header h2 {
@@ -73,7 +78,7 @@
             margin-top: 0.3rem;
         }
 
-        /* About section – new text */
+        /* About section */
         .about-section {
             padding: 1.5rem 1.8rem;
             border-bottom: 1px solid rgba(212,175,55,0.15);
@@ -215,6 +220,14 @@
             transform: translateY(-3px);
         }
 
+        /* Custom SVG for X logo */
+        .x-icon {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            fill: currentColor;
+        }
+
         /* Footer */
         .card-footer {
             background: rgba(0,0,0,0.4);
@@ -237,14 +250,14 @@
 </head>
 <body>
     <div class="contact-card">
-        <!-- Header with logo -->
+        <!-- Header with round logo -->
         <div class="card-header">
             <img src="logo.png" alt="Creative King Fabrication Logo" class="logo-img">
             <h2>CREATIVE KING <span>FABRICATION</span></h2>
             <div class="tagline">Built Different. Designed to Stand Out.</div>
         </div>
 
-        <!-- About Section (new content) -->
+        <!-- About Section -->
         <div class="about-section">
             <h3><i class="fas fa-gem"></i> What We Do</h3>
             <p>We specialize in premium fabrication solutions focused on:</p>
@@ -288,8 +301,11 @@
             <a href="https://www.tiktok.com/@creative_kings_" class="social-link" target="_blank" aria-label="TikTok">
                 <i class="fab fa-tiktok"></i>
             </a>
+            <!-- X (Twitter) using custom SVG -->
             <a href="https://x.com/creativekinghq" class="social-link" target="_blank" aria-label="X (Twitter)">
-                <i class="fab fa-x-twitter"></i>
+                <svg class="x-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2H21.5l-7.19 8.21L22 22h-6.828l-5.35-7.007L3.5 22H.244l7.68-8.77L2 2h6.828l4.83 6.35L18.244 2zm-2.396 18h1.885L7.21 4H5.23l10.618 16z"/>
+                </svg>
             </a>
             <a href="https://www.creativekings.ng" class="social-link" target="_blank" aria-label="Website">
                 <i class="fas fa-globe"></i>
