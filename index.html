@@ -169,9 +169,16 @@
             color: #D4AF37;
             font-size: 1.1rem;
             transition: 0.2s;
+            text-decoration: none;
         }
 
-        .detail-item a {
+        /* Hover effect only on the icon itself, not the whole row */
+        .detail-icon:hover {
+            background: #D4AF37;
+            color: #0A0A0A;
+        }
+
+        .detail-item a:not(.detail-icon) {
             color: #EAEAEA;
             text-decoration: none;
             font-size: 0.9rem;
@@ -180,13 +187,8 @@
             word-break: break-all;
         }
 
-        .detail-item a:hover {
+        .detail-item a:not(.detail-icon):hover {
             color: #D4AF37;
-        }
-
-        .detail-item:hover .detail-icon {
-            background: #D4AF37;
-            color: #0A0A0A;
         }
 
         /* Social Row – all icons, no text */
@@ -278,14 +280,18 @@
             <p><strong>We don’t just build. We create impact.</strong></p>
         </div>
 
-        <!-- Contact Details: Email & Website -->
-   <div class="contact-details">
+        <!-- Contact Details: Email & Website (icons only clickable, hover on icon only) -->
+        <div class="contact-details">
             <div class="detail-item">
-                <div class="detail-icon"><i class="fas fa-envelope"></i></div>
+                <a href="mailto:enquirycreativeking@gmail.com" class="detail-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
                 <a href="mailto:enquirycreativeking@gmail.com">enquirycreativeking@gmail.com</a>
             </div>
             <div class="detail-item">
-                <div class="detail-icon"><i class="fas fa-globe"></i></div>
+                <a href="https://creativekingconstruction.com.ng/" target="_blank" class="detail-icon">
+                    <i class="fas fa-globe"></i>
+                </a>
                 <a href="https://creativekingconstruction.com.ng/" target="_blank">www.creativekingconstruction.com.ng/</a>
             </div>
         </div>
